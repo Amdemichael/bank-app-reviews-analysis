@@ -194,3 +194,4 @@ cython_debug/
 .cursorindexingignore
 
 bank-app-reviews-analysis/
+data/*.csv
