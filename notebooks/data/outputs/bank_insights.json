@@ -1,0 +1,125 @@
+[
+  {
+    "bank": "Commercial Bank of Ethiopia",
+    "sentiment_by_rating": {
+      "negative": {
+        "1": 17,
+        "2": 4,
+        "3": 1,
+        "4": 3,
+        "5": 2
+      },
+      "neutral": {
+        "1": 11,
+        "2": 3,
+        "3": 10,
+        "4": 12,
+        "5": 39
+      },
+      "positive": {
+        "1": 12,
+        "2": 5,
+        "3": 4,
+        "4": 15,
+        "5": 108
+      }
+    },
+    "top_pain_points": [
+      [
+        "UI/UX",
+        38
+      ],
+      [
+        "Performance",
+        19
+      ],
+      [
+        "Features",
+        6
+      ]
+    ],
+    "avg_sentiment_score": 0.9748505814288689
+  },
+  {
+    "bank": "Bank of Abyssinia",
+    "sentiment_by_rating": {
+      "negative": {
+        "1": 75,
+        "2": 2,
+        "3": 3,
+        "4": 0,
+        "5": 3
+      },
+      "neutral": {
+        "1": 43,
+        "2": 4,
+        "3": 8,
+        "4": 3,
+        "5": 30
+      },
+      "positive": {
+        "1": 32,
+        "2": 3,
+        "3": 12,
+        "4": 6,
+        "5": 35
+      }
+    },
+    "top_pain_points": [
+      [
+        "UI/UX",
+        40
+      ],
+      [
+        "Performance",
+        28
+      ],
+      [
+        "Customer Support",
+        9
+      ]
+    ],
+    "avg_sentiment_score": 0.9725004510529713
+  },
+  {
+    "bank": "Dashen Bank",
+    "sentiment_by_rating": {
+      "negative": {
+        "1": 11,
+        "2": 6,
+        "3": 0,
+        "4": 2,
+        "5": 3
+      },
+      "neutral": {
+        "1": 9,
+        "2": 4,
+        "3": 4,
+        "4": 7,
+        "5": 38
+      },
+      "positive": {
+        "1": 10,
+        "2": 4,
+        "3": 7,
+        "4": 9,
+        "5": 196
+      }
+    },
+    "top_pain_points": [
+      [
+        "UI/UX",
+        76
+      ],
+      [
+        "Performance",
+        63
+      ],
+      [
+        "Security",
+        18
+      ]
+    ],
+    "avg_sentiment_score": 0.9898627973371936
+  }
+]
