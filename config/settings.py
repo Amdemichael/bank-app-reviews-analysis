@@ -5,13 +5,13 @@ BANKS = {
 }
 
 SCRAPER_CONFIG = {
-    "target_reviews": 500,
+    "target_reviews": 400,
     "language": "en",
     "country": "et",
     "sort_method": "NEWEST",
-    "batch_size": 100,
-    "delay_seconds": 2,
-    "max_retries": 3
+    "batch_size": 200,
+    "delay_seconds": 3,
+    "max_retries": 5
 }
 
 PREPROCESSING_CONFIG = {
