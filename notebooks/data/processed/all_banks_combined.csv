@@ -1,4 +1,8 @@
 review_id,review,rating,date,bank,source
+ca267e805763a7e6f6dbf0eddf8f3ba2,A great app. It's like carrying a bank in your pocket.,4,2025-06-07,Commercial Bank of Ethiopia,Google Play
+3e7023aa4cbc48e0a778ebc3a15a2285,More than garrantty bank EBC.,4,2025-06-07,Commercial Bank of Ethiopia,Google Play
+0c870fa4f9265b45ca1b6fe05b03fe38,really am happy to this app it is Siple to use everything,5,2025-06-07,Commercial Bank of Ethiopia,Google Play
+af46d51fe30911729d9e3284a2c06e5d,I liked this app. But the User interface is very basic and not attractive at all.,2,2025-06-07,Commercial Bank of Ethiopia,Google Play
 c1698da217f8f1f69ec3f269f2adaed3,"""Why don’t your ATMs support account-to-account transfers like other countries( Kenya, Nigeria , South africa)""",4,2025-06-06,Commercial Bank of Ethiopia,Google Play
 07bec0f87319f8e9e6541da2883b2916,what is this app problem???,1,2025-06-05,Commercial Bank of Ethiopia,Google Play
 77db45e9bb9e610a42cd16c8560ce6fd,the app is proactive and a good connections.,5,2025-06-05,Commercial Bank of Ethiopia,Google Play
@@ -241,10 +245,6 @@ bc805d41edd0d34a142364171b9cdfac,excellent app,5,2025-03-31,Commercial Bank of E
 35ba1bbe7bd550aab342f65533954fa4,easy to use and user friendly,5,2025-03-31,Commercial Bank of Ethiopia,Google Play
 dc23e4972ac054617a0ffa5855052b78,አሪፍ ነው በተለይ የአሻራ ደህነቱ መረጋገጡ ተመችቶኛል,3,2025-03-31,Commercial Bank of Ethiopia,Google Play
 aa6f2a09fb891588c0e60c8aab7fafba,well software,5,2025-03-31,Commercial Bank of Ethiopia,Google Play
-ff85da13b028c7ff7f686a0752888590,ጥሩ ነው አንዳንዴ ስታክ ቢያደርግም,4,2025-03-31,Commercial Bank of Ethiopia,Google Play
-8e79bed0f2013b851047eec996e6cfcc,CBE very good apps,5,2025-03-31,Commercial Bank of Ethiopia,Google Play
-29a4178168ecafb47212b667f22dface,"This application fast, secure and more convenient. Thanks CBE",5,2025-03-31,Commercial Bank of Ethiopia,Google Play
-ddd0a9dda76b8dad873837368e4efe2b,excellent service,5,2025-03-31,Commercial Bank of Ethiopia,Google Play
 8ef1a80fe991dc38670a9d563cec613b,it's not working,3,2025-06-05,Bank of Abyssinia,Google Play
 9fb7ab8b22f50a0512e479f205e57f14,"Hello, I’m facing a problem with the BOA Mobile app. Every time I enter my phone number and password, the app crashes and shows an error that says “BoaMobile closed because this app has a bug.” I tried updating, reinstalling, and clearing cache, but nothing worked. Please fix this bug in the next update. I really need access to my account. Thank you.",1,2025-06-03,Bank of Abyssinia,Google Play
 e2e66449eacbc664b7c11f19b2ae2704,exceptional,5,2025-06-03,Bank of Abyssinia,Google Play
@@ -252,7 +252,6 @@ d98dc5ddff3e0585b5034e4ea5048ec7,BoA Mobile good bank,5,2025-06-02,Bank of Abyss
 8a8806110a736fad626f0295458bab6f,this is worest app 24/7 loading,1,2025-06-01,Bank of Abyssinia,Google Play
 52ddbcebbd0e44e3ff709f3f58a5cd40,This App is not interest for Android phone Please update it .,1,2025-06-01,Bank of Abyssinia,Google Play
 8ce336053ee6420393d23af929382c3e,BoA system is confartable,5,2025-06-01,Bank of Abyssinia,Google Play
-8dd9dd39fb42db9e339984073cfac5e8,very nice Abyssinia bank is choice all,5,2025-05-31,Bank of Abyssinia,Google Play
 482fbb7d5603f27699bf04dde09750b1,"this app, for me , is a waste of time. It doesn't work . I can't even long in, and it really piss me off. FIX THE PROBLEM",1,2025-05-27,Bank of Abyssinia,Google Play
 399d903bae78e256e3ca2e9fa0260a06,Good service.,3,2025-05-25,Bank of Abyssinia,Google Play
 377ce1d5f7c77b5acde0c9b5918df154,the app crush frequently,1,2025-05-24,Bank of Abyssinia,Google Play
@@ -504,6 +503,7 @@ a5f3e1d4d0cab199c5ca1fe95bed7dc1,The previous application is much better than th
 b0654cd7368bbc969a1c8a267846f1b4,"Worst app. It is wise to invest money and you can make it like CBE app. Even the incon has no image. My app has better UI than yours. So, please invest more and hire professional developer companies and improve it.",1,2024-07-18,Bank of Abyssinia,Google Play
 fbedca367c0f5f1c2dca393ecb0ce106,It is not working at all,1,2024-07-16,Bank of Abyssinia,Google Play
 381ed4463595500b2721d386bcc3acdd,The poorest mobile banking survice ever. Only error reports frequently,1,2024-07-16,Bank of Abyssinia,Google Play
+0a0f79ea64b223d107b887def3e93b70,I like this mobile banking app very much. Overall user interface and navigation is awesome. But it lacks instant response when someone deposit or withdraw money.,2,2025-06-07,Dashen Bank,Google Play
 bc5b8f6236150f7b9b4014f4a2fd5360,Massive upgrade from the Amole app.,5,2025-05-31,Dashen Bank,Google Play
 d042d907352845dc7962bb7d498ddda8,very good for this app,5,2025-05-31,Dashen Bank,Google Play
 0dc082289913d85dffd3cecd59750b1d,this app better than Amole . but the biometric on new update doesn't work,4,2025-05-31,Dashen Bank,Google Play
@@ -813,4 +813,3 @@ ec4c1e0e83649106a3bb79726746a263,Wly Super App ilove it ❤️ 😍 💖 💕,5,
 ecd2d476e787e42f4befb05e61869ed3,It has a Good performance but need more upgrade for more performance like when we login account not be fast balance show other thing looking good. Carry on. Thanks so much for Greatest service,4,2025-01-17,Dashen Bank,Google Play
 9fe4de1989a369461f022ad2bfc3e55d,"It is a very wonderful work that has saved its time. That is why it is ""Always one step ahead!""",5,2025-01-17,Dashen Bank,Google Play
 5cb152a4106754c381d74a50198590b4,“Life-changing!” I can’t imagine going back to traditional banking after using this app. It’s so convenient.,5,2025-01-17,Dashen Bank,Google Play
-1bf60537d716203e1159e97603133423,The most good app and easy,5,2025-01-16,Dashen Bank,Google Play
