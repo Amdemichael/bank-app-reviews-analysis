@@ -12,6 +12,7 @@ import re
 import os
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
+from reportlab.lib.colors import Color
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import spacy
 
@@ -45,6 +46,10 @@ def load_data():
         conn.close()
         
         df = pd.DataFrame(rows, columns=["REVIEW_ID", "REVIEW", "RATING", "REVIEW_DATE", "BANK_NAME", "SOURCE"])
+        print("DataFrame columns:", df.columns.tolist())
+        print("DataFrame shape:", df.shape)
+        if df.empty:
+            print("⚠️ Warning: No data retrieved from the database.")
         return df
     
     except cx_Oracle.Error as e:
@@ -57,14 +62,18 @@ def load_data():
 # Add sentiment category and text-based sentiment
 def process_data(df):
     if df.empty:
+        print("⚠️ Warning: Empty DataFrame passed to process_data.")
         return df
     
-    df['REVIEW_DATE'] = pd.to_datetime(df['REVIEW_DATE'])
-    # Rating-based sentiment
+    required_columns = ['REVIEW_DATE', 'RATING', 'REVIEW', 'BANK_NAME']
+    missing_columns = [col for col in required_columns if col not in df.columns]
+    if missing_columns:
+        print(f"⚠️ Error: Missing columns in DataFrame: {missing_columns}")
+        return df
+    
+    df['REVIEW_DATE'] = pd.to_datetime(df['REVIEW_DATE'], errors='coerce')
     df['sentiment_rating'] = df['RATING'].apply(lambda r: 'positive' if r >= 4 else 'negative' if r <= 2 else 'neutral')
-    # Text-based sentiment
     df['sentiment_text'] = df['REVIEW'].apply(lambda x: text_sentiment(x) if pd.notna(x) else 'neutral')
-    # Standardize column names
     df.columns = [col.lower() for col in df.columns]
     return df
 
@@ -181,7 +190,7 @@ def suggest_improvements(insights):
             suggestions.append(f"✨ {bank}: Promote positive features like {', '.join(drivers)} in marketing.")
     return suggestions
 
-# Generate PDF report
+# Generate PDF report with red pain points
 def generate_report(df, insights, output_path="outputs/report.pdf"):
     c = canvas.Canvas(output_path, pagesize=letter)
     width, height = letter
@@ -192,7 +201,7 @@ def generate_report(df, insights, output_path="outputs/report.pdf"):
     c.drawString(50, y, "Bank Reviews Analysis Report")
     y -= 30
     c.setFont("Helvetica", 12)
-    c.drawString(50, y, "Generated on: June 09, 2025")
+    c.drawString(50, y, "Generated on: June 10, 2025")
     y -= 30
     c.drawString(50, y, "Bias Analysis:")
     y -= 20
@@ -210,10 +219,16 @@ def generate_report(df, insights, output_path="outputs/report.pdf"):
     for bank, items in insights.items():
         c.drawString(50, y, f"Bank: {bank}")
         y -= 20
+        # Drivers in green
+        c.setFillColorRGB(0, 0.5, 0)  # Green
         c.drawString(50, y, f"Drivers: {', '.join([w for w, _ in items['drivers']][:5])}")
         y -= 20
+        # Pain Points in red
+        c.setFillColorRGB(1, 0, 0)  # Red
         c.drawString(50, y, f"Pain Points: {', '.join([w for w, _ in items['pain_points']][:5])}")
-        y -= 30
+        y -= 20
+        c.setFillColorRGB(0, 0, 0)  # Reset to black
+        y -= 10
         if y < 50:
             c.showPage()
             y = height - 50

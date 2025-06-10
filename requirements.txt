@@ -24,7 +24,7 @@ oracledb
 
 # Others
 tqdm==4.66.4
-
+mock
 
 
 
